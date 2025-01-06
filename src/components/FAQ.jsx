@@ -21,7 +21,7 @@ const FAQ = () => {
     <PageLayout id="faq-page" className="py-3">
       <div className="container mx-auto text-center mb-30 px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#23b6cb]">
-          Frequently Asked Questions
+          Frequently Asked Questions !
         </h2>
         <p className="text-center mb-8 max-w-2xl mx-auto text-sm md:text-base">
           Got questions? We have answers! Find everything you need to know about
