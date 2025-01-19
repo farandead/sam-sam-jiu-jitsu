@@ -90,7 +90,7 @@ const Header = () => {
         {/* Social Icons visible on larger screens */}
         <div className="socials hidden lg:flex space-x-4 mr-20">
           <a
-            href="#"
+            href="https://www.instagram.com/samsamjiujitsu/"
             className="text-black hover:text-[#23b6cb] transition-colors duration-300 text-xl"
           >
             <FontAwesomeIcon icon={faInstagram} />
