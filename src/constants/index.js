@@ -179,7 +179,7 @@ export const classSchedule = [
     classes: [
       {
         className: "Situational/Full Sparring & Drills Class (No Gi)",
-        times: ["7:30pm - 8:30pm"],
+        times: ["19:30pm - 21:00pm"],
       },
     ],
   },
@@ -192,7 +192,7 @@ export const classSchedule = [
       },
       {
         className: "Kids Class",
-        times: ["17:30 - 10:00"],
+        times: ["17:30 - 18:00"],
       },
     ],
   },
