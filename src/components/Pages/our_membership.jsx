@@ -63,7 +63,7 @@ const Memberships = () => {
             <div className="w-full lg:w-1/2 mt-8 lg:mt-0 lg:mr-12 text-left">
               <h3 className="text-xl font-bold text-[#23b6cb]">Kids Programme</h3>
               <p className="mt-4 text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, recusandae voluptatibus ex laboriosam natus unde enim sit quidem officiis inventore delectus temporibus, soluta vel in quas porro eum ducimus eveniet maxime quibusdam autem voluptate, nam adipisci? Cupiditate nihil necessitatibus qui consequuntur, odio voluptatem quos veniam, repellendus possimus error doloribus maxime.
+              Our kids program is designed to foster character development and discipline in a fun and engaging way. Through interactive games and coordination exercises, we help children improve both their mental and physical abilities. It’s a lively and enjoyable way for kids to learn new skills, build confidence, and develop social skills while making plenty of new friends.
               </p>
               <p className="mt-4 text-gray-700">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, inventore.
