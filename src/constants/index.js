@@ -167,30 +167,52 @@ export const COACHES = [
 export const classSchedule = [
   {
     day: "Monday",
-    className: "All Levels Skill Building Class (Gi)",
-    times: ["19:30pm - 21:00pm"],
+    classes: [
+      {
+        className: "All Levels Skill Building Class (Gi)",
+        times: ["19:30pm - 21:00pm"],
+      },
+    ],
   },
   {
     day: "Tuesday",
-    className: "Situational/Full Sparring & Drills Class (No Gi)",
-    times: ["7:30pm - 8:30pm"],
+    classes: [
+      {
+        className: "Situational/Full Sparring & Drills Class (No Gi)",
+        times: ["7:30pm - 8:30pm"],
+      },
+    ],
   },
   {
     day: "Wednesday",
-    className: "All Levels Skill Building Class (Gi)",
-    times: ["18:00pm - 19:00pm"],
-    className: "kids class",
-    times:["17:30 - 10:00"]
+    classes: [
+      {
+        className: "All Levels Skill Building Class (Gi)",
+        times: ["18:00pm - 19:00pm"],
+      },
+      {
+        className: "Kids Class",
+        times: ["17:30 - 10:00"],
+      },
+    ],
   },
   {
     day: "Thursday",
-    className: "Open Mat/Revision Class (Members/Invite Only)",
-    times: ["19:30pm - 21:00pm"],
+    classes: [
+      {
+        className: "Open Mat/Revision Class (Members/Invite Only)",
+        times: ["19:30pm - 21:00pm"],
+      },
+    ],
   },
   {
     day: "Friday",
-    className: "All Levels Skill Building Class (No Gi)",
-    times: ["10:00am - 12:00pm"],
+    classes: [
+      {
+        className: "All Levels Skill Building Class (No Gi)",
+        times: ["10:00am - 12:00pm"],
+      },
+    ],
   },
 ];
 
