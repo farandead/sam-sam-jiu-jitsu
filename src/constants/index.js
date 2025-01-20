@@ -167,8 +167,8 @@ export const COACHES = [
 export const classSchedule = [
   {
     day: "Monday",
-    className: "All Levels Skill Building Class (No Gi)",
-    times: ["7:30pm - 8:30pm"],
+    className: "All Levels Skill Building Class (Gi)",
+    times: ["19:30pm - 21:00pm"],
   },
   {
     day: "Tuesday",
@@ -178,12 +178,14 @@ export const classSchedule = [
   {
     day: "Wednesday",
     className: "All Levels Skill Building Class (Gi)",
-    times: ["6:00pm - 7:00pm"],
+    times: ["18:00pm - 19:00pm"],
+    className: "kids class",
+    times:["17:30 - 10:00"]
   },
   {
     day: "Thursday",
     className: "Open Mat/Revision Class (Members/Invite Only)",
-    times: ["8:00pm - 9:00pm"],
+    times: ["19:30pm - 21:00pm"],
   },
   {
     day: "Friday",
