@@ -1,5 +1,5 @@
 import React from 'react';
-import { classSchedule } from '../constants'; // Adjust the path based on your folder structure
+import { classSchedule } from '../../constants'; // Adjust the path based on your folder structure
 import PageLayout from '../PageLayout'; // Ensure the correct path to your PageLayout component
 
 const ClassSchedule = () => {
