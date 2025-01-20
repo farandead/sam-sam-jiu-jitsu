@@ -47,10 +47,10 @@ const MobileFooter = () => {
                     </h3>
                     <hr className="border-white w-1/4 mb-4" />
                     <ul className="space-y-1">
-                        <li>3 St Marks Rd, Wolverhampton</li>
-                        <li>WV3 0QH</li>
-                        <li><a href="tel:+447943892321" className="hover:underline">07943 892321</a></li>
-                        <li><a href="mailto:sama@samasamajiujitsu.com" className="hover:underline">sama@samasamajiujitsu.com</a></li>
+                        <li>Old Fallings Lane, Wolverhampton,</li>
+                        <li>WV10 8BL</li>
+                        <li><a href="tel:+447943892321" className="hover:underline">0754 8893221</a></li>
+                        <li><a href="mailto:sama@samasamajiujitsu.com" className="hover:underline">contactus@samsamjiujitsu.co.uk</a></li>
                     </ul>
                 </div>
             </div>
