@@ -59,20 +59,30 @@ const Header = () => {
             }`}
           >
             {navigation.map((item) => (
-              <a
-                key={item.id}
-                href={item.url}
-                onClick={handleClick}
-                className={`block relative font-code text-2xl capitalize text-black transition-colors hover:text-[#23b6cb] ${
-                  item.onlyMobile ? "lg:hidden" : ""
-                } px-3 py-3 md:py-8 lg:-mr-0.5 lg:text-lg lg:font-normal ${
-                  item.url === location.hash
-                    ? "z-2 lg:text-black"
-                    : "lg:text-black"
-                } lg:leading-2 lg:hover:text-[#23b6cb] xl:px-12`}
-              >
-                {item.title}
-              </a>
+              <div key={item.id} className="nav-item">
+                <a
+                  href={item.url}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl capitalize text-black transition-colors hover:text-[#23b6cb] ${
+                    item.onlyMobile ? "lg:hidden" : ""
+                  } px-3 py-3 md:py-8 lg:-mr-0.5 lg:text-lg lg:font-normal ${
+                    item.url === location.hash
+                      ? "z-2 lg:text-black"
+                      : "lg:text-black"
+                  } lg:leading-2 lg:hover:text-[#23b6cb] xl:px-12`}
+                >
+                  {item.title}
+                </a>
+                {item.dropdown && (
+                  <div className="dropdown-content">
+                    {item.dropdown.map((dropdownItem, index) => (
+                      <a key={index} href={dropdownItem.url}>
+                        {dropdownItem.title}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
 
             {/* Social Icons inside the menu for mobile */}

@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-list {
+  @apply list-none p-0 m-0 flex;
+}
+
+.nav-item {
+  @apply relative mr-5;
+}
+
+.nav-item .dropdown-content {
+  @apply hidden absolute bg-gray-100 min-w-[700px] shadow-lg z-10 rounded-lg overflow-hidden;
+  background-image: url('/src/assets/images/highquality/image5.png'); /* Replace with actual image path */
+  opacity: 0.8;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px;
+}
+
+/* Dark overlay */
+.nav-item .dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.397); /* Adjust darkness */
+    z-index: 1;
+  }
+
+  /* Ensure text appears above the dark overlay */
+.nav-item .dropdown-content a {
+    @apply text-white p-4 no-underline block transition-colors duration-300 font-bold;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Makes text readable */
+  }
+  
+.nav-item:hover .dropdown-content {
+  @apply block;
+}
+
+.dropdown-content a {
+  @apply text-black p-3 no-underline block transition-colors duration-300;
+}
+
+.dropdown-content a:hover {
+  @apply bg-gray-200;
+}
+
+.nav-item .dropdown-content a:hover {
+    @apply bg-gray-800; /* Darker hover effect */
+  }

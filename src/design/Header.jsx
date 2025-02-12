@@ -1,4 +1,6 @@
+import React from 'react';
 import { background } from "../../assets";
+import { navigation } from '../constants'; // Add this import statement
 
 export const Rings = () => {
   return (
@@ -34,7 +36,7 @@ export const HamburgerMenu = () => {
       <div className="absolute inset-0 opacity-[.03]">
         {/* <img
           className="w-full h-full object-cover"
-          src={}
+          src={background}
           width={688}
           height={953}
           alt="Background"
@@ -49,3 +51,37 @@ export const HamburgerMenu = () => {
     </div>
   );
 };
+
+export const Navigation = () => {
+  return (
+    <nav>
+      <ul className="nav-list">
+        {navigation.map((item) => (
+          <li key={item.id} className="nav-item">
+            <a href={item.url}>{item.title}</a>
+            {item.dropdown && (
+              <div className="dropdown-content">
+                {item.dropdown.map((dropdownItem, index) => (
+                  <a key={index} href={dropdownItem.url}>{dropdownItem.title}</a>
+                ))}
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+const Header = () => {
+  return (
+    <header>
+      <Navigation />
+      <HamburgerMenu />
+    </header>
+  );
+};
+
+export default Header;
+
+

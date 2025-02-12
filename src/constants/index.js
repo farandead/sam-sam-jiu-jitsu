@@ -76,6 +76,32 @@ export const navigation = [
     title: "Our Memberships",
     url: "/our-memberships",
   },
+
+  {
+    id: "5",
+    title: "Classes",
+    url: "#",
+    dropdown: [
+      {
+        title: "All Levels Skill Building Class (Gi)",
+        url: "/classes/skill-building-gi",
+      },
+      {
+        title: "Situational/Full Sparring & Drills Class (No Gi)",
+        url: "/classes/sparring-drills-no-gi",
+      },
+      {
+        title: "Kids Class",
+        url: "/classes/kids",
+      },
+      {
+        title: "Open Mat/Revision Class",
+        url: "/classes/open-mat-revision",
+      },
+    ],
+    backgroundImage: "/assets/images/highquality/image13.png", // Replace with actual image path
+  },
+  
   {
     id: "2",
     title: "Schedule",
@@ -88,9 +114,10 @@ export const navigation = [
   },
   {
     id: "4",
-    title: " FAQ",
+    title: "FAQ",
     url: "/faq",
   },
+  
 ];
 export const FAQ_DATA = {
   "General Questions": [

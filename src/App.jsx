@@ -17,12 +17,10 @@ import ContactUs from './components/Pages/contact_us'; // Import the ContactUs c
 function App() {
   const location = useLocation(); // Get the current route location
   return (
-
     <ParallaxProvider> {/* Wrap your app inside ParallaxProvider */}
       <div className="App">
-      <Header />  
-        {location.pathname === '/' &&  <ParallaxBackground /> }  
-       
+        <Header />
+        {location.pathname === '/' && <ParallaxBackground />}
         
         {/* Define the routes for different pages */}
         <Routes>
@@ -34,7 +32,6 @@ function App() {
           <Route path="/terms_and_conditions" element={<TermsAndConditions />} /> 
           <Route path="/class_schedule" element={<ClassSchedule />} /> 
           <Route path="/contact_us" element={<ContactUs />} /> 
-
         </Routes>
         
         <Footer />  {/* Common footer for the app */}
