@@ -27,6 +27,9 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+
   return (
     <div className="sticky top-0 left-0 w-full z-50 bg-white border-b shadow-md">
       <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-0 py-4">
@@ -74,9 +77,13 @@ const Header = () => {
                   {item.title}
                 </a>
                 {item.dropdown && (
-                  <div className="dropdown-content">
+                    <div 
+                    className={`dropdown-content ${
+                      openNavigation === item.title ? "block" : "hidden"
+                    } lg:block`}
+                  >
                     {item.dropdown.map((dropdownItem, index) => (
-                      <a key={index} href={dropdownItem.url}>
+                      <a key={index} href={dropdownItem.url} className="p-3 block">
                         {dropdownItem.title}
                       </a>
                     ))}

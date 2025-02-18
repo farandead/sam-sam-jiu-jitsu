@@ -42,7 +42,7 @@ const BackgroundVideo = () => {
                     />
 
                     {/* Main Heading */}
-                    <h1 className="text-5xl font-bold text-white mb-6">#SAMSAMJIUJITSU</h1>
+                    <h1 className="text-5xl font-bold text-white mb-6">SAMSAMJIUJITSU</h1>
 
                     {/* Buttons */}
                     <div className="flex justify-center space-x-10">
